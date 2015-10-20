@@ -1,0 +1,147 @@
+/* 样式重置 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,a,button {
+    margin:0;
+    padding:0;
+}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img { border:0;}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;
+    font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+q:before,q:after {content:'';}
+abbr,acronym { border:0;}
+input, select, button, textarea {font-size: 100%;outline: none;vertical-align: middle;border: 0;border-radius: 0;}
+body {
+    font-size: 12px;
+}
+a, button {
+    padding: 0;
+    text-decoration: none;
+    outline:none;
+    star:expression(this.onFocus=this.blur());
+}
+/* remember to define focus styles! */
+:focus {outline: 0;}
+
+/* 清理浮动 */
+.clear:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clear {
+    zoom: 1;
+    /* for IE6 IE7 */
+}
+
+/* 公共样式 */
+.form-group {
+    zoom: 1;
+    margin-bottom: 15px;
+}
+.form-group:after {
+    display: table;
+    content: ' ';
+    clear: both;
+}
+.form-group .form-left {
+    float: left;
+    text-align: right;
+    height: 27px;
+    line-height: 27px;
+    padding-right: 5px;
+}
+.form-group .form-right {
+    float: right;
+    overflow: hidden;
+}
+.form-input {
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Microsoft YaHei', '宋体', Arial, Verdana, Tahoma;
+    height: 27px;
+    line-height: 27px;
+    *height: 25px;
+    *line-height: 25px;
+    padding: 0 5px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.btn-green {
+    width: 91px;
+    height: 30px;
+    line-height: 30px;
+    _height: 31px;
+    *margin-top: 1px;
+    _margin-top: 2px;
+    vertical-align: middle;
+    font-size: 14px;
+    font-family: '微软雅黑';
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    background: url("../images/btn_green.png") no-repeat;
+}
+.btn-green:active {
+    background: url("../images/btn_green_hover.png") no-repeat;
+}
+.f-left {
+    float: left;
+}
+.f-right {
+    float: right;
+}
+.red {
+    color: red;
+}
+
+/* 图标 */
+.icons {
+    background: url("../images/glyphicons-halflings.png") no-repeat;
+    width: 16px;
+    height: 14px;
+    display: inline-block;
+}
+.icons.t1 {
+    background-position: -432px 0;
+}
+.icons.t2 {
+    background-position: -409px -120px;
+}
+.icons.t3 {
+    background-position: -432px -48px;
+}
+.icons.t4 {
+    background-position: -361px -144px;
+}
+.icons.t5 {
+    background-position: -432px -25px;
+}
+.icons.t6 {
+    background-position: -289px -48px;
+}
+.icons.t7 {
+    background-position: -71px -48px;
+}
+.icons.t8 {
+    background-position: 0 -144px;
+}
+.icons.t9 {
+    background-position: -264px -24px;
+}
+.icons.t10 {
+    background-position: -217px -120px;
+}
+.icons.t11 {
+    background-position: -167px 0;
+}
+.icons.t40 {
+    background-position: -217px -120px;
+}

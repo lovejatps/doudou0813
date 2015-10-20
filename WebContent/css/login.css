@@ -1,0 +1,66 @@
+@import url(base.css);
+
+body {
+    background: url("../images/login_bg.jpg") no-repeat;
+}
+
+/* 顶部logo */
+.login-logo {
+    width: 171px;
+    height: 57px;
+    margin-top: 45px;
+    margin-left: 50px;
+    background: url("../images/logo.png") no-repeat;
+}
+
+/* 登录框 */
+.login-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 325px;
+    height: 303px;
+    margin-left: -162px;
+    margin-top: -181px;
+}
+
+.login-box .lb-title {
+    font-family: '微软雅黑';
+    width: 100%;
+    height: 85px;
+    line-height: 85px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 1px #333;
+    letter-spacing: 2px;
+}
+
+.login-box .lb-main {
+    width: 283px;
+    height: 174px;
+    padding-top: 44px;
+    padding-right: 42px;
+    background: url("../images/login_bg.png") no-repeat;
+}
+
+.login-box .form-group {
+    margin-bottom: 23px;
+}
+
+.login-box .form-group .form-left {
+    width: 80px;
+    text-align: center;
+    padding-right: 0;
+    color: #fff;
+}
+
+.login-box .form-group .form-right {
+    width: 197px;
+    text-align: right;
+}
+
+.login-box .btn-green {
+    margin-top: 10px;
+    float: right;
+}

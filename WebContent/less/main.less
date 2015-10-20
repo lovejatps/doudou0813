@@ -1,0 +1,445 @@
+@import url(base.less);
+
+/* 主界面样式 */
+
+.container {
+	padding: 10px;
+}
+// 面包屑导航
+.breadNav {
+	padding-left: 10px;
+	height: 38px;
+	line-height: 38px;
+	overflow: hidden;
+	font-weight: bold;
+	background-color: #f1f1f1;
+	li {
+		float: left;
+		color: #000;
+		padding-right: 20px;
+		a {
+			color: #000;
+			font-family: @fontS;
+			font-size: @fontSm;
+		}
+		span {
+			padding-right: 10px;
+		}
+	}
+}
+// 搜索栏
+.searchBar {
+	padding-top: 5px;
+	padding-bottom: 15px;
+	font-family: @fontS;
+	font-size: @fontSm;
+	color: #000;
+	input {
+		width: 119px;
+		height: 26px;
+		line-height: 26px\9;
+		padding: 0 5px;
+		border: 1px solid #d0ccc7;
+		float: left;
+	}
+	span {
+		float: left;
+		padding: 0 5px;
+		line-height: 28px;
+	}
+	.num-search {
+		float: left;
+		padding-right: 10px;
+	}
+	.date-search {
+		float: left;
+		padding-right: 10px;
+	}
+	.btn-search {
+		width: 91px;
+		height: 30px;
+		line-height: 30px;
+		margin-top: -1px;
+		font-size: @fontSize;
+		color: #fff;
+		float: left;
+		text-align: center;
+		display: block;
+		cursor: pointer;
+		background: url('@{imgPath}btn_green.png') no-repeat;
+		&:active {
+			background: url('@{imgPath}btn_green_hover.png') no-repeat;
+		}
+	}
+}
+
+// 表格样式
+.u-tab {
+    width: 100%;
+    font-size: @fontSm;
+    font-family: @fontS;
+    th, td {
+    	line-height: 16px;
+    	text-align: center;
+    	vertical-align: middle;
+    	border: 1px solid #fff;
+    }
+    thead {
+    	tr {
+    		color: #fff;
+    		font-size: @fontSize;
+    		font-family: @fontFamily;
+    		background-color: #439aa5;
+    	}
+    	th {
+    		padding: 8px 0;
+    	}
+    }
+    tbody {
+    	tr {
+    		color: #000;
+    		&:hover {
+    			td {
+    				background-color: #defeff;
+    			}
+    		}
+    	}
+    	td {
+    		padding: 6px 0;
+    		background-color: #d0f1f1;
+    	}
+    	.fix-td {
+    		a {
+    			color: red;
+    			text-decoration: underline;
+    		}
+    	}
+    	.dig-td {
+    		font-family: @fontFamily;
+    	}
+    }
+    tfoot {
+    	tr {
+    		color: #ff8200;
+    	}
+    }
+}
+// 页码链接 
+.u-link {
+	padding-top: 30px;
+	padding-bottom: 15px;
+	overflow: hidden;
+	font-family: @fontS;
+	font-size: @fontSm;
+	.link-main {
+		float: right;
+		color: #000;
+	}
+}
+
+// 分页样式
+
+.modular2 {
+	line-height: 27px;
+	.bar_btn {
+		float: left;
+		margin: 0 5px;
+	}
+	.FL {
+		float: left;
+		margin-right: 5px;
+	}
+	.FR {
+		float: right;
+	}
+	input, select {
+		float: left;
+		font-family: @fontS;
+		font-size: @fontSm;
+		border: none;
+		line-height: 19px;
+		height: 19px;
+		width: 30px;
+		margin: 3px 5px;
+		text-align: center;
+		border: 1px solid #ccc;
+	}
+	select {
+		width: 50px;
+		height: 27px;
+		line-height: 27px;
+		margin: 0 5px;
+	}
+	option {
+		line-height: 27px;
+		border-color: #fff;
+	}
+	a {
+		height: 25px;
+		line-height: 25px;
+		padding: 0 12px;
+		color: #000;
+		border: 1px solid #ddd;
+		margin-left: -1px;
+		display: inline-block;
+		&:hover, &.hover {
+			text-decoration: none;
+			background-color: #e9faff;
+			border-color: #006f98;
+		}
+	}
+	.left-first2, .right-last2, .next-right2, .pre-left2 {
+		color: #999;
+		&:hover {
+			background-color: #fff;
+			border-color: #ddd;
+		}
+	}
+}
+
+// 添加，提交等表单
+.list-table {
+	padding-top: 50px;
+	.list-ul, .list-ul2 {
+		width: 600px;
+		margin: 0 auto;
+		.tips-true, .tips-false {
+			position: absolute;
+			top: 0; right: -300px;
+			color: #000;
+			font-family: @fontS;
+			font-size: @fontSm;
+			width: 287px;
+			height: auto;
+			background: url('@{imgPath}verification-ui6.gif') no-repeat;
+			background-position: 0 0;
+			line-height: 27px;
+			color: blue;
+			.tips-bottom-t, .tips-bottom-f {
+				height: 3px;
+				background: url('@{imgPath}verification-ui6.gif') no-repeat;
+			}
+			span {
+				width: 252px;
+				padding-left: 35px;
+				display: block;
+				text-align: left;
+				line-height: 27px;
+			}
+			.tips-bottom-t {
+				background-position: 0 -186px;
+			}
+			.tips-bottom-f {
+				background-position: 0 -376px;
+			}
+		}
+		.tips-false {
+			background-position: 0 -190px;
+			color: red;
+		}
+		li {
+			float: left;
+			margin-bottom: 20px;
+			position: relative;
+            clear: both;
+		}
+		span {
+			float: left;
+			width: 120px;
+			line-height: 30px;
+			text-align: right;
+            padding-right: 10px;
+            &.d_span {
+              width:80px;
+              padding-right: 0;
+              text-align: center;
+            }
+		}
+		input {
+			width: 292px;
+			height: 25px;
+			float: left;
+			padding-top: 5px;
+		}
+        .ipt-check {
+          float: left;
+          margin-top: 8px;
+          margin-left: 5px;
+        }
+        .ipt-name {
+          float: left;
+          line-height: 30px;
+          padding-left: 5px;
+          padding-right: 10px;
+          width: auto;
+        }
+		.input1, .input_public, .input_error {
+			float: left;
+			width: 200px;
+			border: 1px solid #ccc;
+			line-height: 28px;
+			height: 28px;
+			padding: 0 5px;
+		}
+		.onError, .onFocus {
+			margin-top: 10px;
+			span {
+				position: absolute;
+				width: 308px;
+				// padding-top: 10px;
+				padding-left: 20px;
+				text-align: left;
+				span {
+					width: 253px;
+					padding: 0;
+					padding-left: 35px;
+					position: static;
+				}
+			}
+		}
+        .onCorrect {
+          position: absolute;
+          top: 0;
+        }
+        .onError_bot {
+          margin-top: -5px;
+          background-position: 0 -374px;
+        }
+        .onFocus_bot {
+          margin-top: -5px;
+          background-position: 0 -184px;
+        }
+		button {
+			float: left;
+			width: 91px;
+			height: 30px;
+			line-height: 30px;
+			font-size: @fontSize;
+			color: #fff;
+			text-align: center;
+			display: block;
+			cursor: pointer;
+			margin-left: 10px;
+			background: url('@{imgPath}btn_green.png') no-repeat;
+			&:active {
+				background: url('@{imgPath}btn_green_hover.png') no-repeat;
+			}
+			&.btn-blue {
+				background: url('@{imgPath}btn_blue.png') no-repeat;
+				&:active {
+					background: url('@{imgPath}btn_blue_hover.png') no-repeat;
+				}
+			}
+		}
+	}
+    .tj_li {
+      padding-left: 120px;
+    }
+	.list-ul2 {
+		width: 600px;
+		select {
+			width: 212px;
+			border: 1px solid #ccc;
+			float: left;
+			height: 28px;
+			line-height: 28px;
+		}
+	}
+}
+// 2
+.kuangtop {
+	height: 38px;
+	line-height: 38px;
+	color: #000;
+	font-family: @fontS;
+	font-size: @fontSm;
+}
+.caozuots {
+	width: 100%;
+	text-align: center;
+	p {
+		padding: 10px 0 30px 0;
+		line-height: 38px;
+	}
+	button {
+		margin: 0 auto;
+		width: 91px;
+		height: 30px;
+		line-height: 30px;
+		font-size: @fontSize;
+		color: #fff;
+		text-align: center;
+		display: block;
+		cursor: pointer;
+		background: url('@{imgPath}btn_green.png') no-repeat;
+		&:active {
+			background: url('@{imgPath}btn_green_hover.png') no-repeat;
+		}
+	}
+}
+
+// applist APP列表页
+.applist {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    .app-ul {
+        margin-left: -30px;
+        li {
+            padding-left: 30px;
+            float: left;
+            width: 150px;
+            padding-bottom: 25px;
+            position: relative;
+        }
+    }
+    .download {
+        width: 16px;
+        height: 16px;
+        display: block;
+        position: absolute;
+        bottom: 28px; right: 5px;
+        background: url('@{imgPath}down.png') no-repeat;
+    }
+    .app-icon {
+        display: block;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        img {
+            width: 120px;
+            height: 120px;
+        }
+        &:hover {
+            .cover-img {
+                display: block;
+            }
+        }
+    }
+    .cover-img {
+        position: absolute;
+        left: 0; top: 0;
+        width: 120px;
+        height: 90px;
+        background: url('@{imgPath}cover-img.png') no-repeat;
+        color: #fff;
+        line-height: 28px;
+        font-size: 12px;
+        padding-top: 30px;
+        display: none;
+
+    }
+    .app-name {
+        padding-top: 10px;
+        display: block;
+        text-align: center;
+        color: #333;
+        &:hover {
+            text-decoration: none;
+        }
+        &:active {
+            color: red;
+        }
+    }
+}

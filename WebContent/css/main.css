@@ -1,0 +1,326 @@
+@import url(base.css);
+@import url(more.css);
+
+/* 公共样式 */
+.container {
+    padding: 10px 20px;
+    min-width: 800px;
+    _width:1000px;
+}
+/*-- input表单 --*/
+.label-form {
+    display: table;
+}
+.label-form .lb-label {
+    display: table-cell;
+    height: 30px;
+    padding-right: 10px;
+    vertical-align: middle;
+    font-size: 12px;
+    font-family: '宋体';
+}
+.label-form .lb-input {
+    display: table-cell;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #d0ccc7;
+    padding: 0 5px;
+    background: url('../images/input_bg.gif') repeat-x #fff;
+}
+.label-form .lb-inputTime {
+    display: table-cell;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #d0ccc7;
+    padding: 0 5px;
+    width: 122px;
+}
+/*-- 表格样式 --*/
+.u-tab {
+    width: 100%;
+}
+.u-tab thead tr {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Microsoft YaHei','宋体',Arial,Verdana,Tahoma;
+}
+.u-tab thead th {
+    padding: 8px 0;
+    background-color: #439aa5;
+}
+.u-tab th, .u-tab td {
+    line-height: 16px;
+    height: 16px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #fff;
+}
+.u-tab tbody tr {
+    color: #000;
+    font-family: '宋体';
+}
+
+.u-tab tbody td {
+    padding: 6px 0;
+    background-color: #d0f1f1;
+}
+
+.u-tab tbody tr:hover td {
+    background-color: #defeff;
+}
+.u-tab .fn-fix {
+    text-decoration: underline;
+    color: #000;
+}
+.u-tab .fn-fix:hover {
+    color: red;
+}
+/*-- 分页样式 --*/
+.page-link {
+    text-align: right;
+    font-family: '宋体';
+}
+.holder {
+    margin: 15px 0;
+}
+.holder a {
+    cursor: pointer;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 10px;
+    display: inline-block;
+    border: 1px solid #e1e2e3;
+    margin-left: 5px;
+    color: #666;
+}
+.holder a:hover {
+    background-color: #d0f1f1;
+    border-color: #439aa5;
+}
+.holder a.jp-current, a.jp-current:hover {
+    font-weight: bold;
+    border-color: #fff;
+    color: #333;
+}
+.holder a.jp-disabled, a.jp-disabled:hover {
+    color: #bbb;
+    background-color: #f9f9f9;
+    border-color: #ddd;
+}
+.holder span { margin: 0 5px; }
+
+/* home */
+.home-html {
+    background-color: #171717;
+}
+/* list */
+.breadNav {
+    font-weight: bold;
+    color: #333;
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden;
+    font-family: '宋体';
+    border-bottom: 1px solid #f1f1f1;
+}
+.breadNav a {
+    color: #333;
+}
+.breadNav li {
+    float: left;
+    padding-right: 20px;
+}
+.searchBar {
+    height: 30px;
+    padding: 10px 0;
+    font-family: '宋体';
+}
+.searchBar .label-form {
+    padding-right: 20px;
+    float: left;
+    font-size: 12px;
+    font-family: '宋体';
+}
+.searchBar .lb-input {
+    width: 250px;
+}
+.searchBar .label-form .left-add {
+    width: 60px;
+}
+.searchBar .left-add, .searchBar .right-add {
+    *margin-top:1px;
+}
+.tableList {
+    padding: 10px 0;
+}
+
+/* add */
+.formBody {
+    padding-top: 60px;
+}
+.form-add {
+    margin: 0 auto;
+    width: 600px;
+}
+.form-add .label-form {
+    width: 100%;
+}
+.label-form {
+    display: table;
+    color: #666;
+    font-size: 14px;
+    font-family: 'Microsoft YaHei','宋体',Arial,Verdana,Tahoma;
+    margin-bottom: 20px;
+    float: left;
+}
+.label-form .left-add {
+    display: table-cell;
+    float: left;
+    height: 30px;
+    text-align: right;
+    line-height: 30px;
+    width: 120px;
+    padding-right: 10px;
+}
+.label-form .left-add i {
+    color: red;
+}
+.label-form .right-add {
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    padding: 0 10px;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+.right-add .tip_right {
+	position: absolute;
+	top: 0px;
+	right: -157px;
+	font-size: 12px;
+	color: #999;
+}
+.right-addpic .right-add {
+	height: inherit;
+	line-height: inherit;
+}
+.right-addpic img {
+	border: 1px solid #d0ccc7;
+	padding: 5px;
+	margin-right: 10px;
+}
+.label-form p.right-add {
+    color: #999;
+    height: auto;
+    line-height: 24px;
+}
+.label-form p.right-add .sm {
+    font-size: 12px;
+    color: #bbb;
+}
+.label-form p.right-add .no-img {
+    margin-top: 10px;
+    display: block;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    color: #bbb;
+}
+.label-form .right-add .c_l {
+    float: left;
+    margin: 9px 7px 0 0;
+    *margin-top: 6px;
+    cursor: pointer;
+}
+.label-form .right-add .c_r {
+    float: left;
+    margin-right:10px;
+}
+.label-form .right-add .inp_r {
+    float: left;
+    width: 220px;
+    border: 1px solid #d0ccc7;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 5px;
+    background: url('../images/input_bg.gif') repeat-x #fff;
+}
+.label-form .right-add .inp_r:focus {
+    border-color: #aaa;
+}
+.label-form .texta-from {
+    float: left;
+    padding: 5px;
+    width: 400px;
+    height: 140px;
+    border: 1px solid #d0ccc7;
+    background: url('../images/input_bg.gif') repeat-x #fff;
+    margin-left: 10px;
+}
+.label-form .texta-from:focus {
+    border-color: #aaa;
+}
+.label-form .btn-green.single {
+    margin-left: 10px;
+    float: left;
+}
+.label-form .btn-green.double {
+    margin-left: 25px;
+    margin-right: 10px;
+    float: left;
+}
+/*添加按钮*/
+.right-add .btn-green {
+    margin-left: 5px;
+    float: left;
+    *margin-top: 0;
+}
+
+/*添加按钮*/
+.center-add .btn-green {
+    margin-left: 5px;
+    margin:0 auto
+}
+
+/* tip */
+.successTip {
+    padding-top: 60px;
+}
+.successTip .centerTip {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Microsoft YaHei', '宋体', Arial, Verdana, Tahoma;
+}
+.successTip .centerTip p {
+    padding-bottom: 20px;
+}
+.successTip .centerTip a {
+    color: #000;
+}
+.successTip .centerTip a:hover {
+    text-decoration: underline;
+}
+.successTip .centerTip .btn-green {
+    margin: 20px auto;
+}
+
+/* 媒体查询 */
+@media (max-width:760px) {
+    .searchBar .lb-input {
+        width: 100px;
+    }
+}
+
+.load-all {
+  color: black;
+  clear: both;
+  padding: 10px 20px;
+  border: 2px solid #999;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: block;
+}

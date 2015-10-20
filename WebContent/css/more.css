@@ -1,0 +1,181 @@
+/*-- 模拟下拉列表 --*/
+
+.label-form .right-add .seled {
+    float: left;
+    width: 220px;
+    border: 1px solid #d0ccc7;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 5px;
+    background: url('../images/drop.png') no-repeat;
+    background-position: right 0;
+    cursor: pointer;
+}
+
+.label-form .right-add .select-ul {
+    border-left: 1px solid #d0ccc7;
+    border-right: 1px solid #d0ccc7;
+    overflow: hidden;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 230px;
+    display: none;
+}
+
+.label-form .right-add .select-ul li {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #d0ccc7;
+    background-color: #fff;
+}
+
+.label-form .right-add .select-ul a {
+    padding: 0 5px;
+    display: block;
+    color: #666;
+}
+
+.label-form .right-add .select-ul a:hover {
+    background-color: #f1f1f1;
+}
+
+.right-add .dis {
+    display: block !important;
+}
+.zIndex {
+    z-index: 9999!important;
+}
+
+/*-- 模拟文件上传 --*/
+.label-form .right-add .up-left {
+    float: left;
+    width: 220px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #d0ccc7;
+    padding: 0 5px;
+    background: url('../images/input_bg.gif') repeat-x #fff;
+    z-index: -1;
+}
+.label-form .right-add .up-right {
+    float: left;
+    width: 69px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #eee;
+    border: 1px solid #d0ccc7;
+    margin-left: -1px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+.label-form .right-add .up-up {
+    float: left;
+    margin-left: 5px;
+    width: 70px;
+    height: 30px;
+    line-height: 26px;
+    background-color: #eee;
+    color: #666;
+    display: block;
+    border: 1px solid #d0ccc7;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: 'Microsoft YaHei','宋体',Arial,Verdana,Tahoma;
+}
+.label-form .right-add .up-file {
+    position: absolute;
+    left: 10px; top: 0;
+    width: 302px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+    filter:alpha(opacity:0);
+    opacity: 0;
+}
+
+/*-- 表单验证 --*/
+#vinvalueTip, #sysvalueTip, #firmvalueTip, #packvalueTip,  #packageTypeTip,#packvalueTip1,#packvalueTip0, #packvalueTip2, #appRecommendTip, #detailTip, #describeTip, #aniNameTip, #firmVersionTip, #appClassifyTip, #loginNameTip, #roelIdTip, #produceidTip, #password1Tip, #password2Tip, #snvalueTip, #idvalueTip, #phonevalueTip, #prodNameTip,#prodaddressTip{
+	position: absolute;
+	top:0; left: 350px;
+	z-index: 9999;
+	font-size: 12px;
+	line-height: 18px;
+}
+#vinvalue, #sysvalue, #firmvalue, #packvalue, #packageType, #aniName, #firmVersion, #loginName, #password1, #password2, #snvalue, #idvalue, #phonevalue , #prodName, #prodaddress{
+	float: left;
+    width: 220px;
+	border: 1px solid #D0CCC7;
+	height: 28px;
+	line-height: 28px;
+	padding: 0px 5px;
+	background: url("../images/input_bg.gif") repeat-x scroll 0% 0% #FFF;
+}
+#packvalueTip,  #aniNameTip, #firmVersionTip, #appClassifyTip,#packvalueTip1, #packvalueTip2,#packvalueTip0, #packageTypeTip, #appRecommendTip, #loginNameTip, #roelIdTip, #produceidTip, #password1Tip, #password2Tip, #prodNameTip, #prodaddressTip, #sysvalueTip, #firmvalueTip{
+	left: 257px;
+}
+#describeTip, #detailTip {
+	left: 568px;
+}
+.form-add .onError_top {
+	color: red;
+	padding-bottom: 3px;
+	width: 237px;
+}
+.form-add .onFocus_top {
+	color: #2d93ca;
+	padding-bottom: 3px;
+	width: 237px;
+}
+
+/*-- 分页列表 --*/
+.page-link .link-main {
+	margin: 15px 0;
+	float: right;
+}
+.page-link .bar_btn {
+	float: left;
+}
+.modular2 .FL {
+	float: left;
+	line-height: 22px;
+}
+.modular2 .FR {
+	float: left;
+	line-height: 22px;
+	padding-left: 5px;
+}
+.page-link .bar_btn a, .modular2 input, .modular2 select {
+	cursor: pointer;
+    height: 20px;
+  	line-height: 20px;
+  	padding: 0 10px;
+  	display: inline-block;
+  	border: 1px solid #e1e2e3;
+  	margin-left: 5px;
+  	color: #666;
+}
+.page-link .bar_btn a:hover {
+	background-color: #d0f1f1;
+    border-color: #439aa5;
+}
+.modular2 input, .modular2 select {
+	color: #000;
+	width: 20px;
+	text-align: center;
+	margin-right: 5px;
+	font-family: "宋体";
+	float: left;
+	border-color: #ccc;
+}
+.page-link .modular2 .left-first2, .page-link .modular2 .right-last2, .page-link .modular2 .next-right2, .page-link .modular2 .pre-left2 {
+  	color: #bbb;
+ 	background-color: #f9f9f9;
+  	border-color: #ddd;
+}
+.page-link .modular2 .left-first2:hover, .page-link .modular2 .right-last2:hover, .page-link .modular2 .next-right2:hover, .page-link .modular2 .pre-left2:hover {
+  	color: #bbb;
+ 	background-color: #f9f9f9;
+  	border-color: #ddd;
+}

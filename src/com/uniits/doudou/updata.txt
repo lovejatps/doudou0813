@@ -1,0 +1,7 @@
+一、数据库:
+1、新添了表 t_producecar；
+2、在表t_user中添加produce_id属性 
+3、在表t_system_model中添加produce_id属性
+4、在表t_firm_model中添加produce_id属性
+---5、在表t_system_package添加produce_id属性
+---6、在表t_file添加produce_id属性
